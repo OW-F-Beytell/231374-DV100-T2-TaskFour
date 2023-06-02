@@ -1,0 +1,60 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <!-- Required meta tags -->
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+        <!-- External Documents -->
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+        <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    
+        <!-- Internal Documents -->
+        <script src="scripts/index.js"></script>
+
+        <title>DV 100 Term 2 Task Four</title>
+    </head>
+    <body>
+        <div class="container-fluid">
+            <h1>Vehicle Inventory Log:</h1>
+            <div class="row">
+                <div class="col-4">
+                    <form>
+                        <div class="form-group">
+                            <select class="form-control" id="vehicType">
+                                <option selected="selected">Vehicle Type</option>
+                                <option>Motorcycle</option>
+                                <option>Car</option>
+                                <option>Pickup Truck</option>
+                                <option>Truck</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <input type="text" class="form-control" id="make" placeholder="Make">
+                        </div>
+                        <div class="form-group">
+                            <input type="text" class="form-control" id="model" placeholder="Model">
+                        </div>
+                        <div class="form-group">
+                            <input type="text" class="form-control" id="registrationNumber" placeholder="Registration Number">
+                        </div>
+                        <div class="form-group">
+                            <select class="form-control" id="vehicCondition">
+                                <option selected="selected">Vehicle Condition</option>
+                                <option>New</option>
+                                <option>Pre-Owned</option>
+                                <option>Damaged</option>
+                                <option>Scrap Parts</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <button type="button" class="btn btn-primary" style="margin: 0 auto;" onclick="logVehicle()">Log Vehicle</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
